@@ -1,12 +1,11 @@
-{% if site.github.url %}
-  {% assign url_base = site.github.url %}
-{% else %}
-  {% assign url_base = / %}
-{% endif %}
-<!-- jQuery -->
-<script src="{{ url_base }}/js/jquery.js"></script>
+      {% if site.github.url %}
+        {% assign url_base = site.github.url %}
+      {% else %}
+        {% assign url_base = site.url %}
+      {% endif %}
 
-<!-- Bootstrap Core JavaScript -->
-<script src="{{ url_base }}/js/bootstrap.min.js"></script>
+      <!-- jQuery -->
+      <script src="{{ url_base }}/js/jquery.min.js"></script>
 
-{% include pagescript.html %}
+      <!-- Bootstrap core JavaScript -->
+      <script src="{{ url_base }}/js/bootstrap.bundle.min.js"></script>
