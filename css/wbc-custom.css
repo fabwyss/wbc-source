@@ -1,0 +1,9 @@
+/*!
+ * White Bird Coaching custom css
+ * Copyright Fabian Wyss
+ */
+
+.carousel-item {
+  height: 20vh;
+  min-height: 300px;
+}
