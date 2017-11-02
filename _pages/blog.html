@@ -1,27 +1,10 @@
 ---
 
-layout: default
+layout: page
 title: Blog
 permalink: /blog
 
 ---
-      {% if site.github.url %}
-        {% assign url_base = site.github.url %}
-      {% else %}
-        {% assign url_base = site.url %}
-      {% endif %}
-
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Blog Home One
-        <small>Subheading</small>
-      </h1>
-
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="{{ url_base }}/index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Blog Home 1</li>
-      </ol>
 
       <div class="row">
 
@@ -36,7 +19,7 @@ permalink: /blog
             <div class="card-body">
               <h2 class="card-title">{{ post.title }}</h2>
               <p class="card-text">{{ post.excerpt }}</p>
-              <a href="{{url_base}}/{{ post.url }}" class="btn btn-primary">Read More &rarr;</a>
+              <a href="{{ post.url }}" class="btn btn-primary">Read More &rarr;</a>
             </div>
             <div class="card-footer text-muted">
               Posted on {{ post.date | date: "%B %-d, %Y" }} by 
